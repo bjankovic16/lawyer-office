@@ -47,10 +47,10 @@ export default function Header() {
       >
         {/* Logo / Brand */}
         <div className="text-2xl xl:text-3xl font-serif font-bold uppercase text-white">
-  <a href="#top" className="hover:text-gray-400">
-    Advokatska kancelarija Petrović
-  </a>
-</div>
+          <a href="#top" className="hover:text-gray-400">
+            Advokatska kancelarija Petrović
+          </a>
+        </div>
 
         {/* Desktop Nav (≥ lg) */}
         <nav className="hidden lg:flex space-x-6 text-white font-medium text-lg xl:space-x-8 xl:text-xl">
