@@ -21,7 +21,7 @@ const LawChatbotWidget = () => {
     setInput('');
 
     try {
-      const res = await axios.post('https://lawyer-office-chi.vercel.app:5000/chatbot', { question: input });
+      const res = await axios.post('https://lawyer-office-chi.vercel.app/api/chatbot', { question: input });
       const botMessage = { sender: 'bot', text: res.data.answer };
       setMessages(prev => [...prev, botMessage]);
 
