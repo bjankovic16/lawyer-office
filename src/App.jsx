@@ -6,6 +6,7 @@ import Services from './components/Services.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import InterestingCases from './components/InterestingCases.jsx';
+import LawChatbotWidget from './components/LawChatbotWidget';
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     <div>
       <Header />
       <Hero />
+      <LawChatbotWidget />
       <InterestingCases />
       <About />
       <Services />
