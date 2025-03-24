@@ -1,18 +1,10 @@
-const express = require('express');
-const cors = require('cors');
+// api/chatbot.js
 const { Groq } = require('groq-sdk');
-
 require('dotenv').config();
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-const app = express();
-const PORT = process.env.PORT || 5000;
-
-app.use(express.json());
-app.use(cors());
-
-app.post('/chatbot', async (req, res) => {
+module.exports = async (req, res) => {
   const { question } = req.body;
 
   if (!question) {
@@ -35,8 +27,4 @@ app.post('/chatbot', async (req, res) => {
     console.error(error);
     res.status(500).json({ error: 'Greška na serveru.' });
   }
-});
-
-app.listen(PORT, () => {
-  console.log(`Server pokrenut na portu ${PORT}`);
-});
+};
