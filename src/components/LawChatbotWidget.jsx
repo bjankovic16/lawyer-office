@@ -106,11 +106,11 @@ const LawChatbotWidget = () => {
 
           {/* Add email link after MAX_INTERACTIONS */}
           {inputDisabled && (
-            <div className="text-center mt-4">
+            <div className="text-center mt-2">
               <p className="text-sm text-gray-600">Ako imate još pitanja, možete nas kontaktirati putem e-maila:</p>
               <a
                 href="mailto:office@petrovic.rs"
-                className="mt-2 inline-block text-blue-500 hover:text-blue-700"
+                className="mt-1 inline-block text-blue-500 hover:text-blue-700 mb-1"
               >
                 office@petrovic.rs
               </a>
