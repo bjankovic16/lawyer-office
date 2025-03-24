@@ -1,4 +1,3 @@
-// api/chatbot.js
 const { Groq } = require('groq-sdk');
 require('dotenv').config();
 
